@@ -70,6 +70,6 @@ def list_songs_by_artist
   puts "#{idx}. #{artist.name} - #{song.name}"
 end
 end
-
+end
 
 end
