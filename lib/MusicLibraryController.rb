@@ -83,4 +83,12 @@ def list_songs_by_genre
   end
 end
 
+def play_song
+  puts "Which song number would you like to play?"
+  input = gets.strip.to_i
+  song = Song.all[input]
+  puts "Playing #{song} by #{song.artist}" if song
+  end
+end
+
 end
