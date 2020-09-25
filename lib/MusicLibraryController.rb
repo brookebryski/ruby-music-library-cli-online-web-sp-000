@@ -78,7 +78,7 @@ def list_songs_by_genre
 
   if genre = Genre.find_by_name(input)
   genre.songs.sort_by(&:name).each.with_index(1) do |song, idx|
-  puts "#{idx}. #{song.name} - #{song.genre.name}"
+  puts "#{idx}. #{song.artist.name} - #{song.name}"
     end
   end
 end
