@@ -51,7 +51,7 @@ puts "#{idx}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
 
  def list_artists
 Artist.all.sort_by(&:name).each.with_index(1) do |artist, idx|
-puts "#{idx}. #{song.artist.name}"
+puts "#{idx}. #{artist.name}"
 end
 end
 
