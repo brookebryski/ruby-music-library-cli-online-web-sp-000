@@ -86,7 +86,7 @@ end
 def play_song
   puts "Which song number would you like to play?"
   input = gets.strip.to_i
-  song = Song.all[input]
+  if (1...Song.all.length.include?[input])
   puts "Playing #{song} by #{song.artist.name}" if song
   end
 end
